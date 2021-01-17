@@ -1,0 +1,113 @@
+.caracteristicas{
+
+    height: 500px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 4.375rem;
+        font-size: $font-xx-large;
+        font-family: $typography-raleway;
+        font-weight: $bold;
+    }
+
+    &__estadisticas {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+
+        &__text{
+
+            width: 60%;
+        
+            h3{
+                font-family: $typography-raleway;
+                font-size: $font-x-large;
+                font-weight: $bold;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                font-family: $typography-raleway;
+                font-size: $font-x-small;
+                font-weight: $regular;
+            }
+        }
+    }
+
+    
+}
+
+
+
+
+.graphic_img {
+    animation-name: grande_pequeno;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    max-width: 100%;
+}
+
+@media (max-width : $xs-screen){
+    .caracteristicas{
+
+        h2{
+            font-size: $font-x-large;
+        }
+
+        &__estadisticas {  
+            
+            &__graphic{
+                margin-bottom: 20px;
+            }
+
+            &__text{
+                width: 100%;
+
+                h3{
+                    font-size: $font-medium;
+                    font-weight: $bold;
+                    margin-bottom: 10px;
+                }
+        
+                p {
+                    font-family: $typography-raleway;
+                    font-size: $font-small;
+                    font-weight: $regular;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width : $sm-screen){
+    .caracteristicas{
+
+        height: 300px;
+
+        h2{
+            font-size: $font-x-large;
+        }
+
+        &__estadisticas {  
+
+            &__text{
+                width: 80%;
+
+                h3{
+                    font-size: $font-medium;
+                    font-weight: $bold;
+                    margin-bottom: 10px;
+                }
+        
+                p {
+                    font-family: $typography-raleway;
+                    font-size: $font-small;
+                    font-weight: $regular;
+                }
+            }
+        }
+    }
+}
+

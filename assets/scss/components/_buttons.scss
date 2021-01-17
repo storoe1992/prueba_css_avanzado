@@ -1,0 +1,29 @@
+@mixin primary-button {
+    @include buttons;
+    color: white;
+    background-color: $color-ball-blue;
+    transition: linear 200ms;
+    font-family: $typography-raleway;
+    font-weight: $regular;
+
+    &:hover{
+        background-color: $color-middle-blue;
+    }
+
+    &:focus{
+        background-color: $color-lavender-gray;
+        border: 0;
+        outline: transparent;
+    }
+}
+
+.primary-button {
+    
+    @include primary-button;
+}
+
+.primary-button-large {
+    @include primary-button;
+    width: 200px;
+    height: 40px;
+}

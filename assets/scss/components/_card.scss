@@ -1,0 +1,51 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 20px;
+    border: 1px solid $color-spanish-gray;
+    transition: linear 200ms;
+    background-color: white;
+
+    h2 {
+        font-size: $font-large;
+        font-weight: $regular;
+        font-family: $typography-raleway;
+        color: $color-nickel;
+        margin-bottom: 7px;
+    }
+
+    h3{
+        font-size: $font-x-large;
+        font-weight: $bold;
+        font-family: $typography-raleway;
+        color: $color-rising-black;
+        margin-bottom: 10px;
+    }
+
+    &__beneficios {
+        padding: 10px 20px;
+        height: 170px;
+    }
+
+    &__beneficios ul li{
+        font-size: $font-x-small;
+        color: $color-nickel;
+        font-family: $typography-raleway;
+        font-weight: $regular;
+        margin-bottom: 5px;
+    }
+
+
+    &__get-beneficio{
+        width: 100%;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    &:hover {
+        box-shadow: 0px 5px 10px $color-lavender-gray;
+    }
+}

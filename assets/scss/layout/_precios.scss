@@ -1,0 +1,45 @@
+.precios {
+    position: relative;
+    height: 900px;
+    
+    
+
+    &__cards{
+        position: absolute;
+        top: 400px;
+        width: 100%;
+    }
+
+    &__title{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 35%;
+        color: white;
+        font-family: $typography-raleway;
+        font-weight: $bold;
+        font-size: $font-xx-large;
+    }
+}
+
+
+@media (max-width : $xs-screen){
+    .precios {
+        height: 1300px;
+    }
+
+    .card{
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width : $md-screen){
+    .precios {
+        height: 800px;
+    }
+
+    .card{
+        margin-bottom: 50px;
+    }
+}
+

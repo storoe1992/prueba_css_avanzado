@@ -1,0 +1,146 @@
+/*============ CONTAINER ==============*/
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: $xs-screen) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (min-width: $xs-screen) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: $sm-screen) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $md-screen) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: $lg-screen) {
+  .container {
+    padding: 0 150px;
+  }
+}
+
+/*=========== ROW ==============*/
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/*============ COL ===============*/
+
+@mixin columns-size {
+    &-12 {
+        grid-column: span 12;
+      }
+    
+      &-11 {
+        grid-column: span 11;
+      }
+    
+      &-10 {
+        grid-column: span 10;
+      }
+    
+      &-9 {
+        grid-column: span 9;
+      }
+    
+      &-8 {
+        grid-column: span 8;
+      }
+    
+      &-7 {
+        grid-column: span 7;
+      }
+    
+      &-6 {
+        grid-column: span 6;
+      }
+    
+      &-5 {
+        grid-column: span 5;
+      }
+    
+      &-4 {
+        grid-column: span 4;
+      }
+    
+      &-3 {
+        grid-column: span 3;
+      }
+    
+      &-2 {
+        grid-column: span 2;
+      }
+    
+      &-1 {
+        grid-column: span 1;
+      }
+}
+
+.col {
+
+    &-xs{
+        @include columns-size;
+    }
+    
+    &-sm{
+        @include columns-size;
+    }
+    
+    &-md{
+        @include columns-size;
+    }
+    
+    &-lg{
+        @include columns-size;
+    }
+}
+
+div[class^='col'] {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (max-width: $xs-screen){
+    .col-xs {
+        @include columns-size;
+    }
+}
+
+@media (min-width: $xs-screen){
+    .col-sm {
+        @include columns-size;
+    }
+}
+
+@media (min-width: $sm-screen){
+    .col-md {
+        @include columns-size;
+    }
+}
+
+@media (min-width: $md-screen){
+    .col-lg {
+        @include columns-size;
+    }
+}
+
+

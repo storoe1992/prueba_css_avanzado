@@ -1,0 +1,39 @@
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-rising-black;  
+
+    ul {
+        display: flex;
+        list-style: none;
+        li{
+            color: $color-silver-chalice ;
+            font-family: $typography-raleway;
+            font-weight: $regular;
+            font-size: $font-x-small;
+            
+            &:not(:first-child){
+                margin-left: 40px;
+            }
+        }
+
+    } 
+
+    p {
+      
+        color: $color-silver-chalice ;
+            font-family: $typography-raleway;
+            font-weight: $regular;
+            font-size: $font-x-small;
+    }
+
+}
+
+@media (max-width : $xs-screen){
+    .footer {
+        flex-direction: column;
+        padding: 25px 0;
+    }
+}

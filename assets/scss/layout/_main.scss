@@ -1,0 +1,97 @@
+.principal {
+
+    position: relative;
+
+    svg {
+        height: 900px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    
+
+    &__title{
+        position: absolute;
+        width: 100;
+        top : 50px;
+
+        h1, p {
+            width: 320px;
+            font-family: $typography-raleway;
+            font-weight: $regular;
+            
+        }
+
+        h1 {
+            font-family: $typography-opensans;
+            font-weight: bold;
+            font-size: $font-xxx-large;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: $font-small;
+        }
+    }
+
+}
+
+@media (max-width : $xs-screen){
+    .principal {
+
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        svg {
+            height: 300px;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        &__title{
+            h1 {
+                font-size: $font-xx-large;
+            }
+
+            h1, p {
+                width: 100%;                
+            }
+
+            p {
+                font-size: $font-medium;
+            }
+        }
+    }
+}
+
+@media (min-width : $sm-screen){
+    .principal {
+            svg {
+                height: 600px;
+                width: 100%;
+                margin-bottom: 0;
+            }
+    }
+}
+
+@media (min-width : $md-screen){
+    .principal {
+            svg {
+                height: 800px;
+                width: 100%;
+                margin-bottom: 0;
+            }
+    }
+}
+
+@media (min-width : $lg-screen){
+    .principal {
+            svg {
+                height: 900px;
+                width: 100%;
+                margin-bottom: 0;
+            }
+    }
+}
